@@ -42,5 +42,4 @@ button.addEventListener("click", () => {
       }
     }
   }
-  console.log(__log);
 });
