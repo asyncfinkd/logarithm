@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+span {
+  font-size: 2rem;
+}
+
+.log__stem {
+  width: 12px;
+  outline: none;
+  margin-top: 30px;
+  position: absolute;
+  margin-left: 5px;
+}
+
+.span__def {
+  margin-left: 25px;
+}
+
+.log__arg {
+  width: 20px;
+  outline: none;
+}
+
+.log__ind {
+  width: 12px;
+  outline: none;
+  position: absolute;
+  margin-top: 8px;
+  margin-left: 5px;
+}
+
+.log__sub {
+  width: 100%;
+}
