@@ -36,7 +36,7 @@ button.addEventListener("click", () => {
         stringToNumber(inputs, __s)
       );
 
-      /* pow (method) */
+      /* Math.pow (method) */
 
       if (__log.length > __s - __f + __f) {
         let __res = Math.pow(inputs[__i], inputs[__s]);
@@ -44,7 +44,7 @@ button.addEventListener("click", () => {
         if (inputs[__s - __f] == __res) {
           log.innerHTML = `log<sub>${stem.value}</sub>(${arg.value}) = ${__res}`;
         } else {
-          alert(message[__s]);
+          alert(message[__s - __f + __f]);
           log.innerHTML = "";
         }
       }
