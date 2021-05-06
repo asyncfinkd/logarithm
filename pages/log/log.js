@@ -1,6 +1,7 @@
 const arg = document.getElementById("arg");
 const button = document.getElementById("btn");
 const log = document.getElementById("log");
+const round = document.getElementById("round");
 
 function stringToNumber(input, arg) {
   return +input[arg];
@@ -32,6 +33,12 @@ button.addEventListener("click", () => {
 
         if (__res > 0 && __log[__i] > 0) {
           log.innerHTML = `${__log[__i]} = ${__res}<sup>2</sup>`;
+          round.classList.remove("hide");
+
+          round.addEventListener("click", () => {
+            let __result = Math.round(__res);
+            log.innerHTML = `${__log[__i]} = ${__result}<sup>2</sup>`;
+          });
         }
       }
     }

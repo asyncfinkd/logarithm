@@ -6,6 +6,16 @@
     <title>log(calculator)</title>
     <link rel="stylesheet" href="../../style.css" />
   </head>
+  <style>
+    .hide {
+      display: none;
+    }
+    .round {
+      margin: 15px 0px;
+      width: 100%;
+      padding: 5px;
+    }
+  </style>
   <body>
     <div>
       <span>log</span>
@@ -20,8 +30,10 @@
       >
       <br />
       <br />
-      <button class="log__sub" id="btn">submit</button><br /><br />
+      <button class="log__sub" id="btn">submit</button>
+      <br /><br />
       <p id="log"></p>
+      <button class="hide round" id="round">round</button>
     </div>
   </body>
   <script src="./log.js"></script>
